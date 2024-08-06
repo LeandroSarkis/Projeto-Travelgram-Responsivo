@@ -1,4 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 :root {
+
+
   /* Produto */
   --brand-color: #EF5F4C;
 
@@ -15,6 +32,18 @@
   /* fonts */
   --font-family-poppins: 'poppins', sans-serif;
 
-  --heading: 600 1.5rem/125% var(--font-family-poppins);
+  --heading: 700 1.5rem/125% var(--font-family-poppins);
   --paragraph-md: 400 0.875rem/170% var(--font-family-poppins);
+
+  --px-lg: 1rem;
+}
+
+
+@media (width >= 80em) {
+  :root {
+    --heading: 600 2rem/125% var(--font-family-poppins);
+
+    --px-lg: 2rem;
+  }
+  
 }

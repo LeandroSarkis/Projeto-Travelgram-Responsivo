@@ -1,0 +1,19 @@
+footer {
+  font: var(--paragraph-md);
+  color: var(--text-color-secondary);
+  text-align: center;
+
+  & div {
+    place-content: center;
+  }
+}
+
+@media (width >= 80em) {
+  footer {
+    display: flex;
+    
+    & span {
+      margin-right: auto;
+    }
+  }
+}
